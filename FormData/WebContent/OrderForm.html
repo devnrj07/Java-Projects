@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Yourself</title>
+
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+
+body {
+  background: #999;
+  padding: 40px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('baking-blueberries-blur-227432.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-filter: blur(5px);    
+}
+
+form {
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+  background: rgba(130,130,130,.3);
+  padding: 20px 22px;
+  border: 1px solid;
+  border-top-color: rgba(255,255,255,.4);
+  border-left-color: rgba(255,255,255,.4);
+  border-bottom-color: rgba(60,60,60,.4);
+  border-right-color: rgba(60,60,60,.4);
+}
+
+form input, form button,select {
+  width: 212px;
+  style:none;
+  border-bottom: 1px  solid transparent;
+  border-bottom-color: rgba(255,255,255,.1);
+  background-color: rgba(0,0,0,.2);
+  background-repeat: no-repeat;
+  padding: 8px 24px 8px 10px;
+  font: bold .875em/1.25em "Open Sans Condensed", sans-serif;
+  letter-spacing: .075em;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+  margin-bottom: 19px;
+}
+
+form input:focus { background-color: rgba(0,0,0,.4); }
+
+form input {
+  background-image: url();
+  background-position: 220px 10px;
+}
+
+form input.pass {
+  background-image: url();
+  background-position: 223px 8px
+}
+
+::-webkit-input-placeholder { color: #ccc; text-transform: uppercase; }
+::-moz-placeholder { color: #ccc; text-transform: uppercase; }
+:-ms-input-placeholder { color: #ccc; text-transform: uppercase; }
+
+form button[type=submit] {
+  width: inherit;
+  margin-bottom: 0;
+  color: rgb(59, 16, 3);
+  letter-spacing: .05em;
+  text-shadow: 0 1px 0 #133d3e;
+  text-transform: uppercase;
+  font:bold;
+  font-size:120%;
+  border-top-color: #9fb5b5;
+  border-left-color: #608586;
+  border-bottom-color: #1b4849;
+  border-right-color: #1e4d4e;
+  cursor: pointer;
+}
+    
+    </style>
+</head>
+<body>
+        <div id="bg"></div>
+
+        <form action="FormServlet" method="post">
+            
+          <label for=""></label>
+          <input type="text" name="FirstName" class="form-control" id="" placeholder="First Name" required>
+          <input type="text" name="LastName" class="form-control" id="" placeholder="Last Name" required>
+          <input type="text" name="Number" class="form-control" id="" placeholder="Mobile No." required>
+          <input type="text" name="Email" class="form-control" id="" placeholder="Email" required>
+          
+          
+             <div class="dropdown">
+           
+                <select class="form-control"  name="Type" placeholder="Cake Type" id="" required>
+                 <option></option>
+                 <option value="Black Forest">Black Forest</option>
+                 <option value="White Forest">White Forest</option>
+                 <option value="Red Velvet">Red Velvet</option>
+                 <option value="Mix Fruit"> Mix Fruit</option>
+                 <option value="Jello Mello">Jello Mello</option>
+                </select>
+            </div>
+           
+           
+           
+           
+             <div class="dropdown">
+           
+                <select class="form-control"  name="Size" id="" required>
+                 <option></option>
+                 <option value="S(500g)">S(500g)</option>
+                 <option value="M(800g)">M(800g)</option>
+                 <option value="L(1kg)">L(1kg)</option>
+                 <option value="XL(2kg)"> XL(2kg)</option>
+                 <option value="XXL(5kg)">XXL(5kg)</option>
+                </select>
+            </div>
+          
+          <input type="number" name="Quantity" class="form-control" id="" placeholder="Quantity" required>
+          
+          <input type="datetime" name="date" class="form-control" id="" placeholder="date" required>
+          
+          <input type="text" name="Address1" class="form-control" id="" placeholder="Street Address" required>
+          <input type="text" name="Address2" class="form-control" id="" placeholder="Landmark" required>
+          <input type="text" name="City" id="" placeholder="City" class="pass">
+          <input type="text" name="Zipcode" id="" placeholder="Zipcode" class="pass">
+          <input type="text" name="State" id="" placeholder="State" class="pass">
+          <input type="text" name="Country" id="" placeholder="Country" class="pass">
+          
+            
+         
+            
+          <button type="submit" onclick="">Place Order</button>
+            
+        </form>
+         
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+   xmlns:aop = "http://www.springframework.org/schema/aop"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+   http://www.springframework.org/schema/aop 
+   http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+ 
+   <aop:aspectj-autoproxy/>
+   
+    <!-- Definition for student bean -->
+   <bean id = "employee" class = "com.niit.model.Employee">
+      <property name = "empId" value = "11" />
+      <property name = "empname"  value = "Samantha"/>
+      <property name = "salary"  value = "12357"/>      
+   </bean>
+
+   <!-- Definition for logging aspect -->
+   <bean id = "logging" class = "com.niit.model.Logging"/> 
+   
+   
+   </beans>
+  <!-- 
+   <bean id = "emp1" class = "com.niit.model.Employee" >
+     <constructor-arg type="int" value="9999"></constructor-arg>
+     <constructor-arg value="NRJ"></constructor-arg>
+     <constructor-arg type="double" value="1234.5"></constructor-arg>
+        
+   </bean>
+   
+   <bean id="proj" class="com.niit.model.Project" >
+
+
+
+<property name="projId" value="4444"></property>
+<property name="projName" value="Tech Leap"></property>
+ <property name="tech" ref="t1"/> 
+</bean>
+   
+   
+   
+  <bean id="t1" class="com.niit.model.Technology">
+
+     <property name="TechName" value="SpringJS"></property>
+     <property name="Version" value="V2.4Release"></property>
+</bean>
+   
+   
+  
+
+</beans>
+-->
+
+
+<!-- 
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+  <bean id = "emp10" class = "com.niit.model.Employee" autowire="constructor" init-method = "init" 
+      destroy-method = "destroy" scope ="">
+     <constructor-arg type="int" value="9999"></constructor-arg>
+     <constructor-arg value="NRJ"></constructor-arg>
+     <constructor-arg type="double" value="1234.5"></constructor-arg>
+        
+   </bean>
+
+ 
+
+
+   <bean id = "emp1" class = "com.niit.model.Employee" autowire="byName">
+      <property name = "empId" value = "1234"/>
+      <property name="empname" value="Rakesh Ranjan"></property>
+      <property name="salary" value="7654.432"></property>
+        <property name="proj" ref="p1"></property> 
+   </bean>  -->
+<!-- 
+  <bean id="p1" class="com.niit.model.Project" autowire="byName">
+
+<property name="projId" value="4444"></property>
+<property name="projName" value="Tech Leap"></property>
+ <property name="tech" ref="t1"/> 
+</bean>
+
+<bean id="proj" class="com.niit.model.Project" autowire="byName">
+
+<property name="projId" value="4444"></property>
+<property name="projName" value="Tech Leap"></property>
+ <property name="tech" ref="t1"/> 
+</bean>
+
+<bean id="proj21" class="com.niit.model.Project" autowire="byName">
+
+<property name="projId" value="345"></property>
+<property name="projName" value="Tech NOT Leap"></property>
+ <property name="tech" ref="t1"/> 
+</bean>
+
+<bean id="proj31" class="com.niit.model.Project" autowire="byName">
+
+<property name="projId" value="31"></property>
+<property name="projName" value="Tech 31 Leap"></property>
+<property name="tech" ref="t1"/> 
+</bean> -->
+
+
+
